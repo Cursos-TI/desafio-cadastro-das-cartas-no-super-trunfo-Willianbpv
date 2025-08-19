@@ -8,9 +8,7 @@ int main(){
     float area;
     float pib;
     int numerodepontosturisticos;
-    float densidadepopulacional;
-    float pibpercapital;
-    
+
     printf("escolha o estado da carta escrevendo somente a letra inicial dela:");
     scanf(" %c", &estado);
 
@@ -26,18 +24,14 @@ int main(){
     printf("digite o tamanho que você acha que tem essa cidade em km², não precisa ser o numero exato:");
     scanf(" %f", &area);
 
-    printf("digite o pib dessa cidade , o pib e o lucro desta cidade:");
+    printf("digite o pib dessa cidade, o pib e o lucro desta cidade:");
     scanf(" %f", &pib);
 
     printf("digite o numero de pontos turisticos que você acha que tem essa cidade:");
     scanf(" %d", &numerodepontosturisticos);
 
-
-    densidadepopulacional = populacao / area;
-    pibpercapital = pib / populacao;
-
     printf("\n");
-    printf("\n");
+
 
     char lestado;
     char lcodigodacarta[10];
@@ -46,38 +40,29 @@ int main(){
     float larea;
     float lpib;
     int lnumerodepontosturisticos;
-    float ldensidadepopulacional;
-    float lpibpercapital;
-    
-    printf("escolha o estado da segunda carta escrevendo somente a letra inicial dela:");
+
+    printf("escolha estado para a segunda carta escrevendo somente a letra inicial dela:");
     scanf(" %c", &lestado);
 
-    printf("escolha um codigo para essa segunda carta com uma letra e em seguida por um ou dois numeros:");
+    printf("escolha um codigo para a segunda  carta com uma letra e em seguida por um ou dois numeros:");
     scanf(" %s", lcodigodacarta);
 
-    printf("escreva o nome para essa segunda carta de uma cidade que tenha neste estado com apenas uma palavra:");
+    printf("escreva para a segunda carta um nome de uma cidade que tenha neste estado com apenas uma palavra:");
     scanf(" %s", lnomedacidade);
 
-    printf("digite para essa segunda carta qual e a população que você acha que tem essa cidade, não precisa ser o numero exato:");
+    printf("digite para a segunda carta qual e a população que você acha que tem essa cidade, não precisa ser o numero exato:");
     scanf(" %d", &lpopulacao);
 
-    printf("digite para essa segunda carta o tamanho que você acha que tem essa cidade em km², não precisa ser o numero exato:");
+    printf("digite para a segunda carta o tamanho que você acha que tem essa cidade em km², não precisa ser o numero exato:");
     scanf(" %f", &larea);
 
-    printf("digite para essa segunda carta o pib dessa cidade , o pib e o lucro desta cidade:");
+    printf("digite para a segunda carta o pib dessa cidade, o pib e o lucro desta cidade:");
     scanf(" %f", &lpib);
 
-    printf("digite para essa segunda carta o numero de pontos turisticos que você acha que tem essa cidade:");
+    printf("digite para a segunda carta o numero de pontos turisticos que você acha que tem essa cidade:");
     scanf(" %d", &lnumerodepontosturisticos);
 
-
-    ldensidadepopulacional = lpopulacao / larea;
-    lpibpercapital = lpib / lpopulacao;
-
     printf("\n");
-   
-
-    printf("\n***SUAS CARTAS SÃO***\n");
 
     printf("\n-carta 1A-\n");
     printf("Estado: %c\n", estado);
@@ -85,39 +70,21 @@ int main(){
     printf("Nome da cidade: %s\n", nomedacidade);
     printf("Populacao: %d\n", populacao);
     printf("Area: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões de reais\n", pib);
+    printf("PIB: %.2f \n", pib);
     printf("Numero de pontos turisticos: %d\n", numerodepontosturisticos);
-    printf("o numero de densidade populacional é: %.2f hab/km²\n", densidadepopulacional);
-    printf("o numero de pib per capital é: %.2f reais\n", pibpercapital);
     printf("\n");
 
-    
+
     printf("\n-carta 2A-\n");
     printf("Estado: %c\n", lestado);
     printf("Codigo: %s\n", lcodigodacarta);
     printf("Nome da cidade: %s\n", lnomedacidade);
     printf("Populacao: %d\n", lpopulacao);
     printf("Area: %.2f km²\n", larea);
-    printf("PIB: %.2f bilhões de reais\n", lpib);
+    printf("PIB: %.2f \n", lpib);
     printf("Numero de pontos turisticos: %d\n", lnumerodepontosturisticos);
-    printf("o numero de densidade populacional é: %.2f hab/km²\n", ldensidadepopulacional);
-    printf("o numero de pib per capital é: %.2f reais\n", lpibpercapital);
     printf("\n");
-
 
     return 0;
 }
 
-
-
-
-/*
-printf("%formato1 %formato2 %formato3", variavel1, variavel2, variavel3)
-
-%d: Imprime um inteiro no formato decimal.
-%i: Esquivalente a %d.
-%f: Imprime um número de ponto flutuante no formato padão ].
-%e: Imprime um número de ponta flutuante na notação científica.
-%c: Imprime um número único caracter.
-%s: Imprime uma cadeia (string) de  caracters.
-*/
